@@ -164,14 +164,14 @@ exports.authenticate = function(username, password, clientToken, requestUser = t
     })
 }
 
-/**
+/**http://wiki.vg/Authentication#Validate
  * Validate an access token. This should always be done before launching.
  * The client token should match the one used to create the access token.
  * 
  * @param {string} accessToken The access token to validate.
  * @param {string} clientToken The launcher's client token.
  * 
- * @see http://wiki.vg/Authentication#Validate
+ * @see 
  */
 exports.validate = function(accessToken, clientToken){
     return new Promise((resolve, reject) => {

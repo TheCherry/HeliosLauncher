@@ -8,7 +8,7 @@ let activity
 
 exports.initRPC = function(genSettings, servSettings, initialDetails = 'Waiting for Client..'){
     client = new Client({ transport: 'ipc' })
-
+    
     activity = {
         details: initialDetails,
         state: 'Server: ' + servSettings.shortId,
@@ -19,6 +19,8 @@ exports.initRPC = function(genSettings, servSettings, initialDetails = 'Waiting 
         startTimestamp: new Date().getTime(),
         instance: false
     }
+    logger.log('Init Discord ...');
+    logger.log(activity);
 
     client.on('ready', () => {
         logger.log('Discord RPC Connected')

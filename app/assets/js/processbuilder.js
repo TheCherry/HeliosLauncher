@@ -58,6 +58,7 @@ class ProcessBuilder {
         }
 
         logger.log('Launch Arguments:', args)
+        args[1] = args[1].replace(/jar.pack.xz/g, "jar");
 
         const child = child_process.spawn(ConfigManager.getJavaExecutable(), args, {
             cwd: this.gameDir,

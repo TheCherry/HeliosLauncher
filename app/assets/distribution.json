@@ -1,1584 +1,2098 @@
 {
     "version": "1.0.0",
-    "discord": {
-        "clientId": "385581240906022916",
-        "smallImageText": "WesterosCraft",
-        "smallImageKey": "seal-circle"
-    },
-    "java": {
-        "oracle": "http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"
-    },
-    "rss": "https://forum.westeroscraft.com/forum/news.2/index.rss",
+    "rss": "<FILL IN MANUALLY>",
     "servers": [
-        {
-            "id": "WesterosCraft-1.11.2",
-            "name": "WesterosCraft Production Server",
-            "description": "Main WesterosCraft server. Connect to enter the Realm.",
-            "icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/server-prod.png",
-            "version": "3.9.4",
-            "address": "mc.westeroscraft.com",
-            "minecraftVersion": "1.11.2",
-            "discord": {
-                "shortId": "Production",
-                "largeImageText": "WesterosCraft Production Server",
-                "largeImageKey": "server-prod"
-            },
-            "mainServer": true,
-            "autoconnect": true,
-            "modules": [
-                {
-                    "id": "net.minecraftforge:forge:1.11.2-13.20.1.2429",
-                    "name": "Minecraft Forge",
-                    "type": "ForgeHosted",
-                    "artifact": {
-                        "size": 4450992,
-                        "MD5": "3fcc9b0104f0261397d3cc897e55a1c5",
-                        "url": "http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.11.2-13.20.1.2429/forge-1.11.2-13.20.1.2429-universal.jar"
-                    },
-                    "subModules": [
-                        {
-                            "id": "net.minecraft:launchwrapper:1.12",
-                            "name": "Mojang (LaunchWrapper)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 32999,
-                                "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/launchwrapper-1.12.jar"
-                            }
-                        },
-                        {
-                            "id": "org.ow2.asm:asm-all:5.0.3",
-                            "name": "Mojang (ASM)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 241639,
-                                "MD5": "c5cc4613bbdfba3ccf5f0ab85390d0b8",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/asm-all-5.0.3.jar"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-library:2.11.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-library)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 1474672,
-                                "MD5": "379c15c4f724421c6d5d7aecedaf87a6",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-library-2.11.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-compiler:2.11.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-compiler)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 3076920,
-                                "MD5": "7d89e952f2d5c74577310cd2c28e3f20",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-compiler-2.11.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-actors-migration_2.11:1.1.0@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-actors-migration)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 21324,
-                                "MD5": "04e3428b2600ace33c7ae2bf1f6c0a4c",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-actors-migration_2.11-1.1.0.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-continuations-library)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 7956,
-                                "MD5": "ed9b1d27aba8ac4090a3749c4dfc895a",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-continuations-library_2.11-1.0.2.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-continuations-plugin)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 46140,
-                                "MD5": "a8232db22a72a981de6b1399eb86dff7",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-continuations-plugin_2.11.1-1.0.2.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-parser-combinators_2.11:1.0.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-parser-combinators)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 85568,
-                                "MD5": "2e50a7df17680daadacca69f07f8a16d",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-parser-combinators_2.11-1.0.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-reflect:2.11.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-reflect)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 1070312,
-                                "MD5": "84e5dc81c10e2bd74c579c9d0332fdd9",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-reflect-2.11.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-swing_2.11:1.0.1",
-                            "name": "Minecraft Forge (scala-swing)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 736795,
-                                "MD5": "1d360289e697022a3f57abaad344b28f",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-swing_2.11-1.0.1.jar"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-xml_2.11:1.0.2@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-xml)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 217812,
-                                "MD5": "cc891b094a4c32dedc56bfefe9b072ff",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-xml_2.11-1.0.2.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "com.typesafe.akka:akka-actor_2.11:2.3.3@jar.pack.xz",
-                            "name": "Minecraft Forge (akka-actor)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 746612,
-                                "MD5": "25cb22c3078e9fb3f7a861c912924862",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/akka-actor_2.11-2.3.3.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "com.typesafe:config:1.2.1@jar.pack.xz",
-                            "name": "Minecraft Forge (typesafe-config)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 56636,
-                                "MD5": "10ec4ccabc4e68aac9cf87165ead5d7d",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/config-1.2.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "lzma:lzma:0.0.1",
-                            "name": "Mojang (LZMA)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 5762,
-                                "MD5": "a3e3c3186e41c4a1a3027ba2bb23cdc6",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/lzma-0.0.1.jar"
-                            }
-                        },
-                        {
-                            "id": "net.sf.trove4j:trove4j:3.0.3",
-                            "name": "Trove4J",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 2523218,
-                                "MD5": "8fc4d4e0129244f9fd39650c5f30feb2",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/trove4j-3.0.3.jar"
-                            }
-                        },
-                        {
-                            "id": "java3d:vecmath:1.5.2",
-                            "name": "Vecmath",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 318956,
-                                "MD5": "e5d2b7f46c4800a32f62ce75676a5710",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/vecmath-1.5.2.jar"
-                            }
-                        },
-                        {
-                            "id": "net.sf.jopt-simple:jopt-simple:4.6",
-                            "name": "Jopt-simple",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 62477,
-                                "MD5": "13560a58a79b46b82057686543e8d727",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/jopt-simple-4.6.jar"
-                            }
-                        },
-                        {
-                            "id": "net.minecraftforge:MercuriusUpdater:1.11.2",
-                            "name": "MercuriusUpdater",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 15146,
-                                "MD5": "7556d06064ebbfa3b334a15092d725d0",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/MercuriusUpdater-1.11.2.jar"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "com.westeroscraft:westerosblocks:3.2.0-beta-1-190",
-                    "name": "WesterosBlocks",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 17376788,
-                         "MD5": "370f4f1804c93f498f31af8dac509605",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/mods/WesterosBlocks.jar"
-                    }
-                },
-                {
-                    "id": "com.westeroscraft:westeroscraftrp:2019-01-21",
-                    "name": "WesterosCraft Resource Pack",
-                    "type": "File",
-                    "artifact": {
-                        "size": 46999843,
-                        "MD5": "309eb9e5296e9f55cfecb7d4058245a4",
-                        "path": "resourcepacks/WesterosCraft.zip",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/resourcepacks/WesterosCraft.zip"
-                    }
-                },
-                {
-                    "id": "net.optifine:optifine:1.11.2_HD_U_C7",
-                    "name": "Optifine",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 2254712,
-                        "MD5": "0dd7761e908f9b245bb0dc0fac5649f5",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/mods/OptiFine.jar"
-                    }
-                },
-                {
-                    "id": "mezz:jei:1.11.2-4.5.0.290",
-                    "name": "JustEnoughItems",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 538740,
-                        "MD5": "f4d931f6db6210621a86fa1e7eae8016",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/mods/jei.jar"
-                    }
-                },
-                {
-                    "id": "org.blockartistry:dynsurround:1.11.2-3.4.9.3",
-                    "name": "DynamicSurroundings",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 22291385,
-                        "MD5": "65403c66d8b3655b372f58047941d206",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/mods/DynamicSurroundings.jar"
-                    },
-                    "subModules": [
-                        {
-                            "id": "dsurround.cfg",
-                            "name": "DynamicSurroundings General Configuration File",
-                            "type": "File",
-                            "artifact": {
-                                "size": 20258,
-                                "path": "/config/dsurround/dsurround.cfg",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/config/dsurround/dsurround.cfg"
-                            }
-                        },
-                        {
-                            "id": "westeros.json",
-                            "name": "DynamicSurroundings WesterosCraft Configuration File",
-                            "type": "File",
-                            "artifact": {
-                                "size": 608,
-                                "MD5": "44eab112ff24d0bd29974c270de868ba",
-                                "path": "/config/dsurround/westeros.json",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/config/dsurround/westeros.json"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "octarine-noise:betterfoliage:1.11.2-2.1.10",
-                    "name": "BetterFoliage",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 4675903,
-                        "MD5": "522fdf73b6e4343cb6243872fb7b4b6c",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/mods/BetterFoliage.jar"
-                    },
-                    "subModules": [
-                        {
-                            "id": "betterfoliage.cfg",
-                            "name": "BetterFoliage Configuration File",
-                            "type": "File",
-                            "artifact": {
-                                "size": 7878,
-                                "MD5": "6dd38f873c4129af05a2d6c500cbe954",
-                                "path": "/config/betterfoliage.cfg",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/config/betterfoliage.cfg"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "techbrew:journeymap:1.11.2-5.4.7",
-                    "name": "JourneyMap",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 1735525,
-                        "MD5": "1c3380502eb7b9a495581b2402d144df",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/mods/journeymap.jar"
-                    }
-                },
-                {
-                    "id": "com.github.hexomod:worldeditcuife2:2.1.1-mf-1.11.2-13.20.0.2228",
-                    "name": "WorldEditCUI",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 461691,
-                        "MD5": "439f82b69f3464969163c188818c677b",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/mods/worldeditcuife.jar"
-                    }
-                },
-                {
-                    "id": "mcp.mobius:waila:1.7.1_1.11.2",
-                    "name": "Waila",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 542744,
-                        "MD5": "26258a3557bf333e8f4ce8b1e9481031",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/mods/Waila.jar"
-                    }
-                },
-                {
-                    "id": "com.mumfrey:liteloader:1.11.2",
-                    "name": "Liteloader",
-                    "type": "LiteLoader",
-                    "required": {
-                        "value": false,
-                        "def": false
-                    },
-                    "artifact": {
-                        "size": 1685422,
-                        "MD5": "3a98b5ed95810bf164e71c1a53be568d",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/liteloader.jar"
-                    },
-                    "subModules": [
-                        {
-                            "id": "com.mumfrey:macrokeybindmod:0.14.4-1.11.2@litemod",
-                            "name": "Macro/Keybind Mod",
-                            "type": "LiteMod",
-                            "required": {
-                                "value": false,
-                                "def": false
-                            },
-                            "artifact": {
-                                "size": 1670811,
-                                "MD5": "16080785577b391d426c62c8d3138558",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/mods/macrokeybindmod.litemod"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "com.sonicether:seus:11.0",
-                    "name": "Sonic Ether's Unbelievable Shaders",
-                    "type": "File",
-                    "artifact": {
-                        "size": 175159,
-                        "MD5": "bfa8c31d1da8131b59917bb2460205b1",
-                        "path": "shaderpacks/SEUS v11.0.zip",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/shaderpacks/SEUS.zip"
-                    }
-                },
-                {
-                    "id": "options.txt",
-                    "name": "Default Client Options",
-                    "type": "File",
-                    "artifact": {
-                        "size": 1973,
-                        "path": "options.txt",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/options-1.11.2.txt" 
-                    }
-                },
-                {
-                    "id": "servers.dat",
-                    "name": "Saved Client Servers",
-                    "type": "File",
-                    "artifact": {
-                        "size": 84,
-                        "MD5": "71d99e229d7d2b8d2a6423e46832a4b8",
-                        "path": "servers.dat",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/servers.dat" 
-                    }
-                }
-            ]
+      {
+        "id": "RiseCraft-Radioactive-1.12.2",
+        "name": "RiseCraft Radioactive",
+        "description": "<FILL IN MANUALLY>",
+        "icon": "<FILL IN MANUALLY>",
+        "version": "1.0.0",
+        "address": "gs.risegaming.de",
+        "minecraftVersion": "1.12.2",
+        "discord": {
+          "shortId": "Production",
+          "largeImageText": "WesterosCraft Production Server",
+          "largeImageKey": "server-prod"
         },
-        {
-            "id": "WesterosCraftTest-1.11.2",
-            "name": "WesterosCraft Test Server",
-            "description": "Main testing server. Experimental changes are live here.",
-            "icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/server-test.png",
-            "version": "3.9.4",
-            "address": "mc.westeroscraft.com:4444",
-            "minecraftVersion": "1.11.2",
-            "discord": {
-                "shortId": "Test Server",
-                "largeImageText": "WesterosCraft Test Server",
-                "largeImageKey": "server-test"
+        "mainServer": false,
+        "autoconnect": false,
+        "modules": [
+          {
+            "id": "net.minecraftforge:forge:1.12.2-14.23.5.2838:universal",
+            "name": "Minecraft Forge",
+            "type": "ForgeHosted",
+            "artifact": {
+              "size": 5035170,
+              "MD5": "8112748766ba92310141fef972fc1ae6",
+              "url": "https://mc-launcher.risegaming.de/repo/lib/net/minecraftforge/forge/1.12.2-14.23.5.2838/forge-1.12.2-14.23.5.2838-universal.jar"
             },
-            "mainServer": false,
-            "autoconnect": true,
-            "modules": [
-                {
-                    "id": "net.minecraftforge:forge:1.11.2-13.20.1.2476",
-                    "name": "Minecraft Forge",
-                    "type": "ForgeHosted",
-                    "artifact": {
-                        "size": 4455536,
-                        "MD5": "7cef816cc01d53a04a180f0214d2982a",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/forge-1.11.2-13.20.1.2476-universal.jar"
-                    },
-                    "subModules": [
-                        {
-                            "id": "net.minecraft:launchwrapper:1.12",
-                            "name": "Mojang (LaunchWrapper)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 32999,
-                                "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/launchwrapper-1.12.jar"
-                            }
-                        },
-                        {
-                            "id": "org.ow2.asm:asm-all:5.0.3",
-                            "name": "Mojang (ASM)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 241639,
-                                "MD5": "c5cc4613bbdfba3ccf5f0ab85390d0b8",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/asm-all-5.0.3.jar"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-library:2.11.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-library)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 1474672,
-                                "MD5": "379c15c4f724421c6d5d7aecedaf87a6",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-library-2.11.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-compiler:2.11.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-compiler)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 3076920,
-                                "MD5": "7d89e952f2d5c74577310cd2c28e3f20",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-compiler-2.11.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-actors-migration_2.11:1.1.0@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-actors-migration)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 21324,
-                                "MD5": "04e3428b2600ace33c7ae2bf1f6c0a4c",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-actors-migration_2.11-1.1.0.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-continuations-library)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 7956,
-                                "MD5": "ed9b1d27aba8ac4090a3749c4dfc895a",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-continuations-library_2.11-1.0.2.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-continuations-plugin)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 46140,
-                                "MD5": "a8232db22a72a981de6b1399eb86dff7",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-continuations-plugin_2.11.1-1.0.2.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-parser-combinators_2.11:1.0.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-parser-combinators)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 85568,
-                                "MD5": "2e50a7df17680daadacca69f07f8a16d",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-parser-combinators_2.11-1.0.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-reflect:2.11.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-reflect)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 1070312,
-                                "MD5": "84e5dc81c10e2bd74c579c9d0332fdd9",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-reflect-2.11.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-swing_2.11:1.0.1",
-                            "name": "Minecraft Forge (scala-swing)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 736795,
-                                "MD5": "1d360289e697022a3f57abaad344b28f",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-swing_2.11-1.0.1.jar"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-xml_2.11:1.0.2@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-xml)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 217812,
-                                "MD5": "cc891b094a4c32dedc56bfefe9b072ff",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-xml_2.11-1.0.2.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "com.typesafe.akka:akka-actor_2.11:2.3.3@jar.pack.xz",
-                            "name": "Minecraft Forge (akka-actor)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 746612,
-                                "MD5": "25cb22c3078e9fb3f7a861c912924862",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/akka-actor_2.11-2.3.3.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "com.typesafe:config:1.2.1@jar.pack.xz",
-                            "name": "Minecraft Forge (typesafe-config)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 56636,
-                                "MD5": "10ec4ccabc4e68aac9cf87165ead5d7d",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/config-1.2.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "lzma:lzma:0.0.1",
-                            "name": "Mojang (LZMA)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 5762,
-                                "MD5": "a3e3c3186e41c4a1a3027ba2bb23cdc6",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/lzma-0.0.1.jar"
-                            }
-                        },
-                        {
-                            "id": "net.sf.trove4j:trove4j:3.0.3",
-                            "name": "Trove4J",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 2523218,
-                                "MD5": "8fc4d4e0129244f9fd39650c5f30feb2",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/trove4j-3.0.3.jar"
-                            }
-                        },
-                        {
-                            "id": "java3d:vecmath:1.5.2",
-                            "name": "Vecmath",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 318956,
-                                "MD5": "e5d2b7f46c4800a32f62ce75676a5710",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/vecmath-1.5.2.jar"
-                            }
-                        },
-                        {
-                            "id": "net.sf.jopt-simple:jopt-simple:4.6",
-                            "name": "Jopt-simple",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 62477,
-                                "MD5": "13560a58a79b46b82057686543e8d727",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/jopt-simple-4.6.jar"
-                            }
-                        },
-                        {
-                            "id": "net.minecraftforge:MercuriusUpdater:1.11.2",
-                            "name": "MercuriusUpdater",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 15146,
-                                "MD5": "7556d06064ebbfa3b334a15092d725d0",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/MercuriusUpdater-1.11.2.jar"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "com.westeroscraft:westerosblocks:3.2.0-beta-1-190",
-                    "name": "WesterosBlocks",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 17376788,
-                         "MD5": "370f4f1804c93f498f31af8dac509605",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.11.2/mods/WesterosBlocks.jar"
-                    }
-                },
-                {
-                    "id": "com.westeroscraft:westeroscraftrp:2019-01-21",
-                    "name": "WesterosCraft Resource Pack",
-                    "type": "File",
-                    "artifact": {
-                        "size": 46999843,
-                        "MD5": "309eb9e5296e9f55cfecb7d4058245a4",
-                        "path": "resourcepacks/WesterosCraft.zip",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.11.2/resourcepacks/WesterosCraft.zip"
-                    }
-                },
-                {
-                    "id": "net.optifine:optifine:1.11.2_HD_U_C7",
-                    "name": "Optifine",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 2254712,
-                        "MD5": "0dd7761e908f9b245bb0dc0fac5649f5",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.11.2/mods/OptiFine.jar"
-                    }
-                },
-                {
-                    "id": "mezz:jei:1.11.2-4.5.1.296",
-                    "name": "JustEnoughItems",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 542399,
-                        "MD5": "584b3099d34c9a1b8649385b90831b34",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.11.2/mods/jei.jar"
-                    }
-                },
-                {
-                    "id": "org.blockartistry:dynsurround:1.11.2-3.4.9.3",
-                    "name": "DynamicSurroundings",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 22291385,
-                        "MD5": "65403c66d8b3655b372f58047941d206",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.11.2/mods/DynamicSurroundings.jar"
-                    },
-                    "subModules": [
-                        {
-                            "id": "dsurround.cfg",
-                            "name": "DynamicSurroundings General Configuration File",
-                            "type": "File",
-                            "artifact": {
-                                "size": 20849,
-                                "path": "/config/dsurround/dsurround.cfg",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.11.2/config/dsurround/dsurround.cfg"
-                            }
-                        },
-                        {
-                            "id": "westeros.json",
-                            "name": "DynamicSurroundings WesterosCraft Configuration File",
-                            "type": "File",
-                            "artifact": {
-                                "size": 608,
-                                "MD5": "44eab112ff24d0bd29974c270de868ba",
-                                "path": "/config/dsurround/westeros.json",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.11.2/config/dsurround/westeros.json"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "octarine-noise:betterfoliage:1.11.2-2.1.10",
-                    "name": "BetterFoliage",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 4675903,
-                        "MD5": "522fdf73b6e4343cb6243872fb7b4b6c",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.11.2/mods/BetterFoliage.jar"
-                    },
-                    "subModules": [
-                        {
-                            "id": "betterfoliage.cfg",
-                            "name": "BetterFoliage Configuration File",
-                            "type": "File",
-                            "artifact": {
-                                "size": 7878,
-                                "MD5": "6dd38f873c4129af05a2d6c500cbe954",
-                                "path": "/config/betterfoliage.cfg",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.11.2/config/betterfoliage.cfg"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "techbrew:journeymap:1.11.2-5.5.2",
-                    "name": "JourneyMap",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 1799560,
-                        "MD5": "4315e9939bf64bfa963c8674cb13e838",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.11.2/mods/journeymap.jar"
-                    }
-                },
-                {
-                    "id": "com.github.hexomod:worldeditcuife2:2.1.2-mf-1.11.2-13.20.0.2228",
-                    "name": "WorldEditCUI",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 461696,
-                        "MD5": "53f6eef360af5329d9e52b5351657908",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.11.2/mods/worldeditcuife.jar"
-                    }
-                },
-                {
-                    "id": "mcp.mobius:waila:1.7.1_1.11.2",
-                    "name": "Waila",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 542744,
-                        "MD5": "26258a3557bf333e8f4ce8b1e9481031",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.11.2/mods/Waila.jar"
-                    }
-                },
-                {
-                    "id": "com.mumfrey:liteloader:1.11.2",
-                    "name": "Liteloader",
-                    "type": "LiteLoader",
-                    "required": {
-                        "value": false,
-                        "def": false
-                    },
-                    "artifact": {
-                        "size": 1685422,
-                        "MD5": "3a98b5ed95810bf164e71c1a53be568d",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/liteloader.jar"
-                    },
-                    "subModules": [
-                        {
-                            "id": "com.mumfrey:macrokeybindmod:0.14.4-1.11.2@litemod",
-                            "name": "Macro/Keybind Mod",
-                            "type": "LiteMod",
-                            "required": {
-                                "value": false,
-                                "def": false
-                            },
-                            "artifact": {
-                                "size": 1670811,
-                                "MD5": "16080785577b391d426c62c8d3138558",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.11.2/mods/macrokeybindmod.litemod"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "com.sonicether:seus:11.0",
-                    "name": "Sonic Ether's Unbelievable Shaders",
-                    "type": "File",
-                    "artifact": {
-                        "size": 175159,
-                        "MD5": "bfa8c31d1da8131b59917bb2460205b1",
-                        "path": "shaderpacks/SEUS v11.0.zip",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.11.2/shaderpacks/SEUS.zip"
-                    }
-                },
-                {
-                    "id": "options.txt",
-                    "name": "Default Client Options",
-                    "type": "File",
-                    "artifact": {
-                        "size": 1973,
-                        "path": "options.txt",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/options-1.11.2.txt" 
-                    }
-                },
-                {
-                    "id": "servers.dat",
-                    "name": "Saved Client Servers",
-                    "type": "File",
-                    "artifact": {
-                        "size": 87,
-                        "MD5": "594de6063df993b5fde31c7290226ee4",
-                        "path": "servers.dat",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.11.2/servers.dat" 
-                    }
+            "subModules": [
+              {
+                "id": "net.minecraft:launchwrapper:1.12@jar",
+                "name": "Minecraft Forge (launchwrapper)",
+                "type": "Library",
+                "artifact": {
+                  "size": 32999,
+                  "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
+                  "url": "https://mc-launcher.risegaming.de/repo/lib/net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar"
                 }
+              },
+              {
+                "id": "org.ow2.asm:asm-all:5.2@jar",
+                "name": "Minecraft Forge (asm-all)",
+                "type": "Library",
+                "artifact": {
+                  "size": 247787,
+                  "MD5": "f5ad16c7f0338b541978b0430d51dc83",
+                  "url": "https://mc-launcher.risegaming.de/repo/lib/org/ow2/asm/asm-all/5.2/asm-all-5.2.jar"
+                }
+              },
+              {
+                "id": "org.jline:jline:3.5.1@jar",
+                "name": "Minecraft Forge (jline)",
+                "type": "Library",
+                "artifact": {
+                  "size": 614590,
+                  "MD5": "4c20d2879ed2bd75a0771ce29e89f6b0",
+                  "url": "https://mc-launcher.risegaming.de/repo/lib/org/jline/jline/3.5.1/jline-3.5.1.jar"
+                }
+              },
+              {
+                "id": "net.java.dev.jna:jna:4.4.0@jar",
+                "name": "Minecraft Forge (jna)",
+                "type": "Library",
+                "artifact": {
+                  "size": 1091208,
+                  "MD5": "34d3537524a6c8c134e840e7be601569",
+                  "url": "https://mc-launcher.risegaming.de/repo/lib/net/java/dev/jna/jna/4.4.0/jna-4.4.0.jar"
+                }
+              },
+              {
+                "id": "com.typesafe.akka:akka-actor_2.11:2.3.3@jar.pack.xz",
+                "name": "Minecraft Forge (akka-actor_2.11)",
+                "type": "Library",
+                "artifact": {
+                  "size": 746612,
+                  "MD5": "25cb22c3078e9fb3f7a861c912924862",
+                  "url": "https://mc-launcher.risegaming.de/repo/lib/com/typesafe/akka/akka-actor_2.11/2.3.3/akka-actor_2.11-2.3.3.jar.pack.xz"
+                }
+              },
+              {
+                "id": "com.typesafe:config:1.2.1@jar.pack.xz",
+                "name": "Minecraft Forge (config)",
+                "type": "Library",
+                "artifact": {
+                  "size": 56636,
+                  "MD5": "10ec4ccabc4e68aac9cf87165ead5d7d",
+                  "url": "https://mc-launcher.risegaming.de/repo/lib/com/typesafe/config/1.2.1/config-1.2.1.jar.pack.xz"
+                }
+              },
+              {
+                "id": "org.scala-lang:scala-actors-migration_2.11:1.1.0@jar.pack.xz",
+                "name": "Minecraft Forge (scala-actors-migration_2.11)",
+                "type": "Library",
+                "artifact": {
+                  "size": 21324,
+                  "MD5": "04e3428b2600ace33c7ae2bf1f6c0a4c",
+                  "url": "https://mc-launcher.risegaming.de/repo/lib/org/scala-lang/scala-actors-migration_2.11/1.1.0/scala-actors-migration_2.11-1.1.0.jar.pack.xz"
+                }
+              },
+              {
+                "id": "org.scala-lang:scala-compiler:2.11.1@jar.pack.xz",
+                "name": "Minecraft Forge (scala-compiler)",
+                "type": "Library",
+                "artifact": {
+                  "size": 3076920,
+                  "MD5": "7d89e952f2d5c74577310cd2c28e3f20",
+                  "url": "https://mc-launcher.risegaming.de/repo/lib/org/scala-lang/scala-compiler/2.11.1/scala-compiler-2.11.1.jar.pack.xz"
+                }
+              },
+              {
+                "id": "org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2@jar.pack.xz",
+                "name": "Minecraft Forge (scala-continuations-library_2.11)",
+                "type": "Library",
+                "artifact": {
+                  "size": 7956,
+                  "MD5": "ed9b1d27aba8ac4090a3749c4dfc895a",
+                  "url": "https://mc-launcher.risegaming.de/repo/lib/org/scala-lang/plugins/scala-continuations-library_2.11/1.0.2/scala-continuations-library_2.11-1.0.2.jar.pack.xz"
+                }
+              },
+              {
+                "id": "org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2@jar.pack.xz",
+                "name": "Minecraft Forge (scala-continuations-plugin_2.11.1)",
+                "type": "Library",
+                "artifact": {
+                  "size": 46140,
+                  "MD5": "a8232db22a72a981de6b1399eb86dff7",
+                  "url": "https://mc-launcher.risegaming.de/repo/lib/org/scala-lang/plugins/scala-continuations-plugin_2.11.1/1.0.2/scala-continuations-plugin_2.11.1-1.0.2.jar.pack.xz"
+                }
+              },
+              {
+                "id": "org.scala-lang:scala-library:2.11.1@jar.pack.xz",
+                "name": "Minecraft Forge (scala-library)",
+                "type": "Library",
+                "artifact": {
+                  "size": 1474672,
+                  "MD5": "379c15c4f724421c6d5d7aecedaf87a6",
+                  "url": "https://mc-launcher.risegaming.de/repo/lib/org/scala-lang/scala-library/2.11.1/scala-library-2.11.1.jar.pack.xz"
+                }
+              },
+              {
+                "id": "org.scala-lang:scala-parser-combinators_2.11:1.0.1@jar.pack.xz",
+                "name": "Minecraft Forge (scala-parser-combinators_2.11)",
+                "type": "Library",
+                "artifact": {
+                  "size": 85568,
+                  "MD5": "2e50a7df17680daadacca69f07f8a16d",
+                  "url": "https://mc-launcher.risegaming.de/repo/lib/org/scala-lang/scala-parser-combinators_2.11/1.0.1/scala-parser-combinators_2.11-1.0.1.jar.pack.xz"
+                }
+              },
+              {
+                "id": "org.scala-lang:scala-reflect:2.11.1@jar.pack.xz",
+                "name": "Minecraft Forge (scala-reflect)",
+                "type": "Library",
+                "artifact": {
+                  "size": 1070312,
+                  "MD5": "84e5dc81c10e2bd74c579c9d0332fdd9",
+                  "url": "https://mc-launcher.risegaming.de/repo/lib/org/scala-lang/scala-reflect/2.11.1/scala-reflect-2.11.1.jar.pack.xz"
+                }
+              },
+              {
+                "id": "org.scala-lang:scala-swing_2.11:1.0.1@jar.pack.xz",
+                "name": "Minecraft Forge (scala-swing_2.11)",
+                "type": "Library",
+                "artifact": {
+                  "size": 205676,
+                  "MD5": "e3928976c4994b114356b9d3489fe409",
+                  "url": "https://mc-launcher.risegaming.de/repo/lib/org/scala-lang/scala-swing_2.11/1.0.1/scala-swing_2.11-1.0.1.jar.pack.xz"
+                }
+              },
+              {
+                "id": "org.scala-lang:scala-xml_2.11:1.0.2@jar.pack.xz",
+                "name": "Minecraft Forge (scala-xml_2.11)",
+                "type": "Library",
+                "artifact": {
+                  "size": 217812,
+                  "MD5": "cc891b094a4c32dedc56bfefe9b072ff",
+                  "url": "https://mc-launcher.risegaming.de/repo/lib/org/scala-lang/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar.pack.xz"
+                }
+              },
+              {
+                "id": "lzma:lzma:0.0.1@jar",
+                "name": "Minecraft Forge (lzma)",
+                "type": "Library",
+                "artifact": {
+                  "size": 5762,
+                  "MD5": "a3e3c3186e41c4a1a3027ba2bb23cdc6",
+                  "url": "https://mc-launcher.risegaming.de/repo/lib/lzma/lzma/0.0.1/lzma-0.0.1.jar"
+                }
+              },
+              {
+                "id": "net.sf.jopt-simple:jopt-simple:5.0.3@jar",
+                "name": "Minecraft Forge (jopt-simple)",
+                "type": "Library",
+                "artifact": {
+                  "size": 78175,
+                  "MD5": "0a5ec84e23df9d7cfb4063bc55f2744c",
+                  "url": "https://mc-launcher.risegaming.de/repo/lib/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar"
+                }
+              },
+              {
+                "id": "java3d:vecmath:1.5.2@jar",
+                "name": "Minecraft Forge (vecmath)",
+                "type": "Library",
+                "artifact": {
+                  "size": 318956,
+                  "MD5": "e5d2b7f46c4800a32f62ce75676a5710",
+                  "url": "https://mc-launcher.risegaming.de/repo/lib/java3d/vecmath/1.5.2/vecmath-1.5.2.jar"
+                }
+              },
+              {
+                "id": "net.sf.trove4j:trove4j:3.0.3@jar",
+                "name": "Minecraft Forge (trove4j)",
+                "type": "Library",
+                "artifact": {
+                  "size": 2523218,
+                  "MD5": "8fc4d4e0129244f9fd39650c5f30feb2",
+                  "url": "https://mc-launcher.risegaming.de/repo/lib/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar"
+                }
+              },
+              {
+                "id": "org.apache.maven:maven-artifact:3.5.3@jar",
+                "name": "Minecraft Forge (maven-artifact)",
+                "type": "Library",
+                "artifact": {
+                  "size": 54961,
+                  "MD5": "7741ebf29690ee7d9dde9cf4376347fc",
+                  "url": "https://mc-launcher.risegaming.de/repo/lib/org/apache/maven/maven-artifact/3.5.3/maven-artifact-3.5.3.jar"
+                }
+              }
             ]
-        },
-        {
-            "id": "WesterosCraftTest-1.12.2",
-            "name": "WesterosCraft 1.12.2 Test Server",
-            "description": "Tests for our version change to 1.12.2 are live here.",
-            "icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/server-test.png",
-            "version": "4.2.1",
-            "address": "mc.westeroscraft.com:4445",
-            "minecraftVersion": "1.12.2",
-            "discord": {
-                "shortId": "1.12.2 Test Server",
-                "largeImageText": "WesterosCraft 1.12.2 Test Server",
-                "largeImageKey": "server-test"
+          },
+          {
+            "id": "generated.forgemod:actuallyadditions:1.12.2-r151@jar",
+            "name": "Actually Additions",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
             },
-            "mainServer": false,
-            "autoconnect": true,
-            "modules": [
-                {
-                    "id": "net.minecraftforge:forge:1.12.2-14.23.5.2797",
-                    "name": "Minecraft Forge",
-                    "type": "ForgeHosted",
-                    "artifact": {
-                        "size": 4937218,
-                        "MD5": "5320593704af58b3906e7106d27e41c8",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/forge-1.12.2-14.23.5.2797-universal.jar"
-                    },
-                    "subModules": [
-                        {
-                            "id": "net.minecraft:launchwrapper:1.12",
-                            "name": "Mojang (LaunchWrapper)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 32999,
-                                "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/launchwrapper-1.12.jar"
-                            }
-                        },
-                        {
-                            "id": "org.ow2.asm:asm-all:5.2",
-                            "name": "Mojang (ASM)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 247787,
-                                "MD5": "f5ad16c7f0338b541978b0430d51dc83",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/asm-all-5.2.jar"
-                            }
-                        },
-                        {
-                            "id": "jline:jline:2.13",
-                            "name": "Mojang (jline)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 248566,
-                                "MD5": "f251ba666cccb260ff7215b2cbeee8d4",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/jline-2.13.jar"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-library:2.11.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-library)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 1474672,
-                                "MD5": "379c15c4f724421c6d5d7aecedaf87a6",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/scala-library-2.11.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-compiler:2.11.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-compiler)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 3076920,
-                                "MD5": "7d89e952f2d5c74577310cd2c28e3f20",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/scala-compiler-2.11.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-actors-migration_2.11:1.1.0@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-actors-migration)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 21324,
-                                "MD5": "04e3428b2600ace33c7ae2bf1f6c0a4c",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/scala-actors-migration_2.11-1.1.0.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-continuations-library)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 7956,
-                                "MD5": "ed9b1d27aba8ac4090a3749c4dfc895a",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/scala-continuations-library_2.11-1.0.2.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-continuations-plugin)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 46140,
-                                "MD5": "a8232db22a72a981de6b1399eb86dff7",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/scala-continuations-plugin_2.11.1-1.0.2.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-parser-combinators_2.11:1.0.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-parser-combinators)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 85568,
-                                "MD5": "2e50a7df17680daadacca69f07f8a16d",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/scala-parser-combinators_2.11-1.0.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-reflect:2.11.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-reflect)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 1070312,
-                                "MD5": "84e5dc81c10e2bd74c579c9d0332fdd9",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/scala-reflect-2.11.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-swing_2.11:1.0.1",
-                            "name": "Minecraft Forge (scala-swing)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 736795,
-                                "MD5": "1d360289e697022a3f57abaad344b28f",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/scala-swing_2.11-1.0.1.jar"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-xml_2.11:1.0.2@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-xml)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 217812,
-                                "MD5": "cc891b094a4c32dedc56bfefe9b072ff",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/scala-xml_2.11-1.0.2.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "com.typesafe.akka:akka-actor_2.11:2.3.3@jar.pack.xz",
-                            "name": "Minecraft Forge (akka-actor)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 746612,
-                                "MD5": "25cb22c3078e9fb3f7a861c912924862",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/akka-actor_2.11-2.3.3.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "com.typesafe:config:1.2.1@jar.pack.xz",
-                            "name": "Minecraft Forge (typesafe-config)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 56636,
-                                "MD5": "10ec4ccabc4e68aac9cf87165ead5d7d",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/config-1.2.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "lzma:lzma:0.0.1",
-                            "name": "Mojang (LZMA)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 5762,
-                                "MD5": "a3e3c3186e41c4a1a3027ba2bb23cdc6",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/lzma-0.0.1.jar"
-                            }
-                        },
-                        {
-                            "id": "net.sf.trove4j:trove4j:3.0.3",
-                            "name": "Trove4J",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 2523218,
-                                "MD5": "8fc4d4e0129244f9fd39650c5f30feb2",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/trove4j-3.0.3.jar"
-                            }
-                        },
-                        {
-                            "id": "java3d:vecmath:1.5.2",
-                            "name": "Vecmath",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 318956,
-                                "MD5": "e5d2b7f46c4800a32f62ce75676a5710",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/vecmath-1.5.2.jar"
-                            }
-                        },
-                        {
-                            "id": "net.sf.jopt-simple:jopt-simple:5.0.3",
-                            "name": "Jopt-simple",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 78175,
-                                "MD5": "0a5ec84e23df9d7cfb4063bc55f2744c",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/jopt-simple-5.0.3.jar"
-                            }
-                        },
-                        {
-                            "id": "org.apache.maven:maven-artifact:3.5.3",
-                            "name": "maven-artifact",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 54961,
-                                "MD5": "7741ebf29690ee7d9dde9cf4376347fc",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/maven-artifact-3.5.3.jar"
-                            }
-                        },
-                        {
-                            "id": "net.minecraftforge:MercuriusUpdater:1.12.2",
-                            "name": "MercuriusUpdater",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 15098,
-                                "MD5": "6eb9e61097bee3103a2fdc42746b76a4",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/MercuriusUpdater-1.12.2.jar"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "com.westeroscraft:westerosblocks:4.0.0-beta-1-66",
-                    "name": "WesterosBlocks",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 17286330,
-                         "MD5": "e5c38ef42e9cc4b957122207dcf95f4f",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.12.2/mods/WesterosBlocks.jar"
-                    }
-                },
-                {
-                    "id": "com.westeroscraft:westeroscraftrp:2019-01-21",
-                    "name": "WesterosCraft Resource Pack",
-                    "type": "File",
-                    "artifact": {
-                        "size": 47002312,
-                        "MD5": "86b169611ca0e51fdc47384d8423c402",
-                        "path": "resourcepacks/WesterosCraft.zip",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.12.2/resourcepacks/WesterosCraft.zip"
-                    }
-                },
-                {
-                    "id": "net.optifine:optifine:1.12.2_HD_U_E3",
-                    "name": "Optifine",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 2444057,
-                        "MD5": "7ec95c57ac1a224d6eb93bd370e4ac37",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.12.2/mods/OptiFine.jar"
-                    }
-                },
-                {
-                    "id": "mezz:jei:1.12.2-4.14.3.242",
-                    "name": "JustEnoughItems",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 620682,
-                        "MD5": "ae6d0e6e873ef6c20f41097dc7fee8c6",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.12.2/mods/jei.jar"
-                    }
-                },
-                {
-                    "id": "org.blockartistry:dynsurround:1.12.2-3.4.10.5",
-                    "name": "DynamicSurroundings",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 22507134,
-                        "MD5": "3d75602c66b7ccfc23c342e8d5e07469",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.12.2/mods/DynamicSurroundings.jar"
-                    },
-                    "subModules": [
-                        {
-                            "id": "dsurround.cfg",
-                            "name": "DynamicSurroundings General Configuration File",
-                            "type": "File",
-                            "artifact": {
-                                "size": 22179,
-                                "path": "/config/dsurround/dsurround.cfg",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.12.2/config/dsurround/dsurround.cfg"
-                            }
-                        },
-                        {
-                            "id": "westeros.json",
-                            "name": "DynamicSurroundings WesterosCraft Configuration File",
-                            "type": "File",
-                            "artifact": {
-                                "size": 608,
-                                "MD5": "44eab112ff24d0bd29974c270de868ba",
-                                "path": "/config/dsurround/westeros.json",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.12.2/config/dsurround/westeros.json"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "octarine-noise:betterfoliage:1.12-2.2.0",
-                    "name": "BetterFoliage",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 926081,
-                        "MD5": "e05a720c5900b9bac4e01179abe8eef6",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.12.2/mods/BetterFoliage.jar"
-                    },
-                    "subModules": [
-                        {
-                            "id": "betterfoliage.cfg",
-                            "name": "BetterFoliage Configuration File",
-                            "type": "File",
-                            "artifact": {
-                                "size": 7878,
-                                "MD5": "6dd38f873c4129af05a2d6c500cbe954",
-                                "path": "/config/betterfoliage.cfg",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.12.2/config/betterfoliage.cfg"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "forgelin:forgelin:1.8.2",
-                    "name": "Forgelin",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 5124663,
-                        "MD5": "59035365f7af35f599d1c4baade64d8b",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.12.2/mods/Forgelin.jar"
-                    }
-                },
-                {
-                    "id": "techbrew:journeymap:1.12.2-5.5.3",
-                    "name": "JourneyMap",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 1831161,
-                        "MD5": "d3b5a672d2393f9fe63903598d50c769",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.12.2/mods/journeymap.jar"
-                    }
-                },
-                {
-                    "id": "com.github.hexomod:worldeditcuife2:2.2.0-mf-1.12.2-14.23.5.2768",
-                    "name": "WorldEditCUI",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 459294,
-                        "MD5": "2b8c1c3bc48c2d80b71daa658f656edb",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.12.2/mods/worldeditcuife.jar"
-                    }
-                },
-                {
-                    "id": "com.mumfrey:liteloader:1.12.2",
-                    "name": "Liteloader",
-                    "type": "LiteLoader",
-                    "required": {
-                        "value": false,
-                        "def": false
-                    },
-                    "artifact": {
-                        "size": 1680383,
-                        "MD5": "1420785ecbfed5aff4a586c5c9dd97eb",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.12.2/liteloader.jar"
-                    },
-                    "subModules": [
-                        {
-                            "id": "com.mumfrey:macrokeybindmod:0.15.4-1.12.1@litemod",
-                            "name": "Macro/Keybind Mod",
-                            "type": "LiteMod",
-                            "required": {
-                                "value": false,
-                                "def": false
-                            },
-                            "artifact": {
-                                "size": 1726452,
-                                "MD5": "9ba3ed960bbb676743a3b6c2e1efc484",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.12.2/mods/macrokeybindmod.litemod"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "com.sonicether:seus-renewed:1.0.0",
-                    "name": "Sonic Ether's Unbelievable Shaders Renewed",
-                    "type": "File",
-                    "artifact": {
-                        "size": 7062491,
-                        "MD5": "e68cc9f8ffc8fad66583b9b2cc05356f",
-                        "path": "shaderpacks/SEUS-Renewed.zip",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.12.2/shaderpacks/SEUS-Renewed.zip"
-                    }
-                },
-                {
-                    "id": "options.txt",
-                    "name": "Default Client Options",
-                    "type": "File",
-                    "artifact": {
-                        "size": 1973,
-                        "path": "options.txt",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/options-1.12.2.txt" 
-                    }
-                },
-                {
-                    "id": "servers.dat",
-                    "name": "Saved Client Servers",
-                    "type": "File",
-                    "artifact": {
-                        "size": 87,
-                        "MD5": "64dc1db90935997f07dfac422206f1de",
-                        "path": "servers.dat",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/test-1.12.2/servers.dat" 
-                    }
-                }
-            ]
-        },
-        {
-            "id": "WesterosCraftTest-1.13.2",
-            "name": "WesterosCraft 1.13.2 Test Server",
-            "description": "Tests for our version change to 1.13.2 are live here.",
-            "icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/server-test.png",
-            "version": "5.0.0",
-            "address": "mc.westeroscraft.com:4445",
-            "minecraftVersion": "1.13.2",
-            "discord": {
-                "shortId": "1.13.2 Test Server",
-                "largeImageText": "WesterosCraft 1.13.2 Test Server",
-                "largeImageKey": "server-test"
+            "artifact": {
+              "size": 5407720,
+              "MD5": "ca5700b2463843b162ea2c2f4c75b098",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/ActuallyAdditions-1.12.2-r151-2.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:akashictome:1.2-12@jar",
+            "name": "Akashic Tome",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
             },
-            "mainServer": false,
-            "autoconnect": false,
-            "modules": [
-                {
-                    "id": "net.minecraftforge:forge:1.13.2-25.0.219",
-                    "name": "Minecraft Forge (base jar)",
-                    "type": "ForgeHosted",
-                    "artifact": {
-                        "size": 159918,
-                        "MD5": "c5a9c40711feb2b4ab0329c48256e30d",
-                        "url": ""
-                    },
-                    "subModules": [
-                        {
-                            "id": "net.minecraftforge:forge:1.13.2-25.0.219:universal",
-                            "name": "Minecraft Forge (universal jar)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 2343272 ,
-                                "MD5": "338c495d266da44ac1955caf91cc14c4",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "net.minecraftforge:forge:1.13.2-25.0.219:client",
-                            "name": "Minecraft Forge (client jar)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 3065519,
-                                "MD5": "df63f7288a8118c9b8836a3e53827aac",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "net.minecraft:client:1.13.2:extra",
-                            "name": "Minecraft Forge (client extra)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 9622361,
-                                "MD5": "dc66e2219e3de6e7ca05847fd3c7746d",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "net.minecraft:client:1.13.2-20190213.203750:srg",
-                            "name": "Minecraft Forge (client srg)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 8198877,
-                                "MD5": "80f355cffe270d2c2943301b96d98fa6",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "1.13.2-forge-25.0.219",
-                            "name": "Minecraft Forge (version.json)",
-                            "type": "VersionManifest",
-                            "artifact": {
-                                "size": 11511,
-                                "MD5": "f13f9e20324d0a55c646d5fb8876b2bb",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "com.paulscode:soundsystem:201809301515",
-                            "name": "Minecraft Forge (Paul's Code Soundsystem)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 66607,
-                                "MD5": "bf43e7b9f628534614b3fc5e4e69d209",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "org.ow2.asm:asm:6.2",
-                            "name": "Minecraft Forge (asm)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 111214,
-                                "MD5": "7abdce94068615d690495f45eb6eb980",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "org.ow2.asm:asm-commons:6.2",
-                            "name": "Minecraft Forge (asm-commons)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 78919,
-                                "MD5": "a031c9a32770c02c2f91d2bcbeceabcd",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "org.ow2.asm:asm-tree:6.2",
-                            "name": "Minecraft Forge (asm-tree)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 50370,
-                                "MD5": "e7279981c6764dcd73a99705acf5c9a6",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "cpw.mods:modlauncher:2.1.1",
-                            "name": "Minecraft Forge (modlauncher)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 101586,
-                                "MD5": "089ae3cf5afe10e96bb930b70dd99402",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "cpw.mods:grossjava9hacks:1.1.0",
-                            "name": "Minecraft Forge (Gross Java 9 Hacks)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 1759,
-                                "MD5": "1adde27730734a786f461ed048d440a0",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "net.minecraftforge:accesstransformers:0.16.0-shadowed",
-                            "name": "Minecraft Forge (Access Transformers)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 444428,
-                                "MD5": "dbe346d662c7bdff0988f941342932e6",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "net.minecraftforge:eventbus:0.9.2-service",
-                            "name": "Minecraft Forge (EventBus)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 38908,
-                                "MD5": "77c6c079914a8369a185e11ae1a7a878",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "net.minecraftforge:forgespi:0.13.0",
-                            "name": "Minecraft Forge (Forge SPI)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 16607,
-                                "MD5": "5634ba7001f8501a2b553430e2068751",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "net.minecraftforge:coremods:0.5.0",
-                            "name": "Minecraft Forge (coremods)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 12284,
-                                "MD5": "d3da5879965cf6f37413d6d1a80d92a7",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "net.minecraftforge:unsafe:0.2.0",
-                            "name": "Minecraft Forge (unsafe)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 2834,
-                                "MD5": "2d1016ebe4c1a63dd50a59d26bd12db1",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "com.electronwill.night-config:core:3.6.0",
-                            "name": "Minecraft Forge (night-config core)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 199763,
-                                "MD5": "841adeca8f5e5e092c7bafb412dcb615",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "com.electronwill.night-config:toml:3.6.0",
-                            "name": "Minecraft Forge (night-config toml)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 31256,
-                                "MD5": "2d1d5f1fa4735b4e654613b493512432",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "org.jline:jline:3.9.0",
-                            "name": "Minecraft Forge (jline)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 707273,
-                                "MD5": "2db9aae140f810a72fc4a5cb5aa5cf9b",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "org.apache.maven:maven-artifact:3.6.0",
-                            "name": "Minecraft Forge (maven-artifact)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 55051,
-                                "MD5": "89e95013b11f347e48c0525965600404",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "net.jodah:typetools:0.6.0",
-                            "name": "Minecraft Forge (typetools)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 14734,
-                                "MD5": "9f65b6e90eb986fe25afc39b8ed3f43b",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "java3d:vecmath:1.5.2",
-                            "name": "Minecraft Forge (vecmath)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 318956,
-                                "MD5": "e5d2b7f46c4800a32f62ce75676a5710",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "org.apache.logging.log4j:log4j-api:2.11.2",
-                            "name": "Minecraft Forge (log4j-api)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 266283,
-                                "MD5": "3f7ee51e3dd0830de799dae0b90243dd",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "org.apache.logging.log4j:log4j-core:2.11.2",
-                            "name": "Minecraft Forge (log4j-core)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 1629585,
-                                "MD5": "c8bd8b5c5aaaa07a3dcbf57de01c9266",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "net.minecrell:terminalconsoleappender:1.1.1",
-                            "name": "Minecraft Forge (terminalconsoleappender)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 15240,
-                                "MD5": "a190e88073a41dfa1b1d47854c41230b",
-                                "url": ""
-                            }
-                        },
-                        {
-                            "id": "net.sf.jopt-simple:jopt-simple:5.0.4",
-                            "name": "Minecraft Forge (jopt-simple)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 78146,
-                                "MD5": "eb0d9dffe9b0eddead68fe678be76c49",
-                                "url": ""
-                            }
-                        }
-                        
-                    ]
-                },
-                {
-                    "id": "squeek:appleskin:1.0.11",
-                    "name": "AppleSkin (test mod)",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 27382,
-                         "MD5": "a1c0cfed77b2cb7b6699e59ba0252a50",
-                        "url": ""
-                    }
-                },
-                {
-                    "id": "com.blamejared:controlling:4.0.1",
-                    "name": "Controlling (Test Mod)",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 34914,
-                         "MD5": "b4dc10b9039518ce00845ca962e6a136",
-                        "url": ""
-                    }
-                }
-            ]
-        }
+            "artifact": {
+              "size": 44663,
+              "MD5": "b753c7ce93ad8768e3ba3a9f35d16bee",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/AkashicTome-1.2-12.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:applecore-mc1.12.2-3.2.0:0.0.0@jar",
+            "name": "AppleCore-mc1.12.2-3.2.0.jar",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 88308,
+              "MD5": "1cbb68f6f8e55dbbe525dd8d90f86d1f",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/AppleCore-mc1.12.2-3.2.0.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:autoreglib:1.3-32@jar",
+            "name": "AutoRegLib",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 108306,
+              "MD5": "4e5a4b881c27b1e4502a9a16c00882ad",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/AutoRegLib-1.3-32.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:baubles:1.12-1.5.2@jar",
+            "name": "Baubles",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 108450,
+              "MD5": "944dec4ef3fbfd4d498d94a7047af201",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Baubles-1.12-1.5.2.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:betteradvancements:0.1.0@jar",
+            "name": "Better Advancements",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 62668,
+              "MD5": "9009a4d080caf4d31e4ef8edba1f90cf",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/BetterAdvancements-1.12.2-0.1.0.77.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:betterbuilderswands:0.11.1@jar",
+            "name": "Better Builder's Wands",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 75709,
+              "MD5": "64763e14d31cdc21cedd4c4e85fbec73",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/BetterBuildersWands-1.12-0.11.1.245+69d0d70.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:betterquesting:3.5.323@jar",
+            "name": "Better Questing",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 1430501,
+              "MD5": "3ffa9eb52686f8d65917fe0dadf24252",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/BetterQuesting-3.5.323.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:brandonscore:1.12.2-2.4.18.210@jar",
+            "name": "Brandon's Core",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 825615,
+              "MD5": "af264b9fbdbcbb1e47da12e79782da7f",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/BrandonsCore-1.12.2-2.4.18.210-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:ctm:MC1.12.2-1.0.1.30@jar",
+            "name": "CTM",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 199047,
+              "MD5": "e8299f25d1437b1e7644d379d45a8a42",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/CTM-MC1.12.2-1.0.1.30.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:ceramics:1.12-1.3.7@jar",
+            "name": "Ceramics",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 400538,
+              "MD5": "5992287165b230487f46d8321bb957dd",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Ceramics-1.12-1.3.7.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:chameleon:1.12-4.1.3@jar",
+            "name": "Chameleon",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 96859,
+              "MD5": "e42efa8f4fd42d2918128a826b740e98",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Chameleon-1.12-4.1.3.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:chancecubes:1.12.2-5.0.2.345@jar",
+            "name": "Chance Cubes",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 926090,
+              "MD5": "0562f1fd64af43102d190f177ea885a0",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/ChanceCubes-1.12.2-5.0.2.345.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:chesttransporter:1.12.2-2.8.8@jar",
+            "name": "Chest Transporter",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 314060,
+              "MD5": "6f5aadb16a4357aad4b8bc662b76de77",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/ChestTransporter-1.12.2-2.8.8.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:chisel-mc1.12.2-1.0.1.44:0.0.0@jar",
+            "name": "Chisel-MC1.12.2-1.0.1.44.jar",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 4754821,
+              "MD5": "fd1dd13667812ea520446e6220510d45",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Chisel-MC1.12.2-1.0.1.44.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:cofhcore:4.6.3.27@jar",
+            "name": "CoFH Core",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 847938,
+              "MD5": "90efac9c0abffa63c6da1453ceca1d68",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/CoFHCore-1.12.2-4.6.3.27-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:cofhworld:1.3.1.7@jar",
+            "name": "CoFH World",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 532040,
+              "MD5": "c196ade3fe4f33b4d38b4de43326ae2d",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/CoFHWorld-1.12.2-1.3.1.7-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:codechickenlib:3.2.3.358@jar",
+            "name": "CodeChicken Lib",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 704330,
+              "MD5": "3b5e44db5ac96fb23a439590b6731a31",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/CodeChickenLib-1.12.2-3.2.3.358-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:contenttweaker:1.12.2-4.9.1@jar",
+            "name": "ContentTweaker",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 274895,
+              "MD5": "a36b092d9ed0900b7143f4a14a12fba8",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/ContentTweaker-1.12.2-4.9.1.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:controlling:3.0.8@jar",
+            "name": "Controlling",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 28487,
+              "MD5": "b81c567a7918737c08dcb2ab3f50d7f6",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Controlling-3.0.8.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:cookingforblockheads:6.5.0@jar",
+            "name": "Cooking for Blockheads",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 595301,
+              "MD5": "f1067937f350aba63a80089093b66724",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/CookingForBlockheads_1.12.2-6.5.0.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:crafttweaker:1.12-4.1.20@jar",
+            "name": "CraftTweaker2",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 1363036,
+              "MD5": "521297c5e2459dd232a72dacffa45a0b",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/CraftTweaker2-1.12-4.1.20.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:cucumber:1.1.3@jar",
+            "name": "Cucumber Library",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 126699,
+              "MD5": "0018d8de31b05dc44c80a25d73fde15b",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Cucumber-1.12.2-1.1.3.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:props:2.6.3_1.12.2@jar",
+            "name": "Decocraft",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 16747522,
+              "MD5": "f9a8eb5ac8e45f1438ef937dc48b882b",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Decocraft-2.6.3_1.12.2.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:draconicadditions:1.12.2-1.10.2.30@jar",
+            "name": "Draconic Additions",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 677537,
+              "MD5": "9550dfb8621de6002e3799b8a2ca864d",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Draconic-Additions-1.12.2-1.10.2.30-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:draconicevolution:1.12.2-2.3.25.351@jar",
+            "name": "Draconic Evolution",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 5705834,
+              "MD5": "a23c263063b8e110f8c053c148ba6d2d",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Draconic-Evolution-1.12.2-2.3.25.351-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:dungeontactics:DT-0.16.6@jar",
+            "name": "DungeonTactics",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 2596976,
+              "MD5": "f7b74b734ad43051ed967f9e6ff5e83a",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/DungeonTactics-1.12.2-0.16.6.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:elevatorid:1.12.2-1.4.2@jar",
+            "name": "Elevator Mod",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 114056,
+              "MD5": "a38506a649af7f66b2967ef0ca736948",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/ElevatorMod-1.12.2-1.4.2.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:endercore:1.12.2-0.5.73@jar",
+            "name": "EnderCore",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 642654,
+              "MD5": "619a6d82109069d4326ba5fabf48d4fa",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/EnderCore-1.12.2-0.5.73.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:enderio:5.1.51@jar",
+            "name": "Ender IO",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 7990974,
+              "MD5": "46ea7d70bdbe473f369b1ac0c43ed3a0",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/EnderIO-1.12.2-5.1.51.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:enderstorage:2.4.6.137@jar",
+            "name": "EnderStorage",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 223250,
+              "MD5": "c66000e24e8c11675db554c644b31bda",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/EnderStorage-1.12.2-2.4.6.137-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:exchangers:1.12.2-2.8@jar",
+            "name": "Exchangers",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 281052,
+              "MD5": "6a01826309531ba47dea317e5dd5b409",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Exchangers-1.12.2-2.8.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:extracells:2.6.5@jar",
+            "name": "Extra Cells 2",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 2520745,
+              "MD5": "a96d3b8fd1cc8b41fdde9469bacc5c99",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/ExtraCells-1.12.2-2.6.5.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:bigreactors:1.12.2-0.4.5.67@jar",
+            "name": "Extreme Reactors",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 1110113,
+              "MD5": "92e5cc48aca43add940af096e7694141",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/ExtremeReactors-1.12.2-0.4.5.67.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:fastleafdecay-v14:0.0.0@jar",
+            "name": "FastLeafDecay-v14.jar",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 5200,
+              "MD5": "18096ffb7f58d94f8e5a7bf2ff160f0f",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/FastLeafDecay-v14.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:fastbench:1.12.2-1.7.2@jar",
+            "name": "FastWorkbench",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 26322,
+              "MD5": "2a0e8335926fd413521d2432c91842a9",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/FastWorkbench-1.12.2-1.7.2.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:forgemultipartcbe:2.6.2.83@jar",
+            "name": "Forge Multipart CBE",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 1304958,
+              "MD5": "e45e04bc38dc373aaef0415c2e2d441d",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/ForgeMultipart-1.12.2-2.6.2.83-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:forgelin:1.8.4@jar",
+            "name": "Shadowfacts' Forgelin",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 6278399,
+              "MD5": "2da79fce72265eab0541e565636d389d",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Forgelin-1.8.4.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:industrialrenewal:0.15.0@jar",
+            "name": "Industrial Renewal",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 4177658,
+              "MD5": "b07d7d7f94107ed0e714bd43b3b37228",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/IndustrialRenewal_1.12.2-0.15.0.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:infernal-mobs-mod-1.12.2:0.0.0@jar",
+            "name": "Infernal-Mobs-Mod-1.12.2.jar",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 183579,
+              "MD5": "490f29a18ad3445f4dbd0616e9c06b0d",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Infernal-Mobs-Mod-1.12.2.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:inventorytweaks:1.63+release.109.220f184@jar",
+            "name": "Inventory Tweaks",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 263258,
+              "MD5": "1e2e33e5710394252abc4b014bc3dcbd",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/InventoryTweaks-1.63.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:ironbackpacks:1.12.2-3.0.8-12@jar",
+            "name": "Iron Backpacks",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 465363,
+              "MD5": "9fd50b1827b711704c69789aa94ac2ca",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/IronBackpacks-1.12.2-3.0.8-12.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:itemphysic:1.3@jar",
+            "name": "ItemPhysic",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 471292,
+              "MD5": "1f4474187b22bc1112f2bd6b6fb6bc1e",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/ItemPhysic+Lite+1.3.7+mc1.12.2.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:IvToolkit:1.3.3-1.12@jar",
+            "name": "IvToolkit",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 455763,
+              "MD5": "f1a23cb6eaa682240c0ecdab65e7857f",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/IvToolkit-1.3.3-1.12.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:jeresources:0.9.2@jar",
+            "name": "Just Enough Resources",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 222270,
+              "MD5": "87a4666549a60d8fb423883dd4ee6232",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/JustEnoughResources-1.12.2-0.9.2.60.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:login_shield:1.12.2-3-g7c6e7ac@jar",
+            "name": "Login Shield",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 22628,
+              "MD5": "9c045292a533e793fc5d8365e87d8fb8",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Login_Shield-1.12.2-3-g7c6e7ac.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:lunatriuscore:1.2.0.42@jar",
+            "name": "LunatriusCore",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 76753,
+              "MD5": "0dae43ef5376822db0399ad254207aa3",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/LunatriusCore-1.12.2-1.2.0.42-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:mtlib:3.0.6@jar",
+            "name": "MTLib",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 30002,
+              "MD5": "b46748362c046d70b821121331246aa5",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/MTLib-3.0.6.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:magneticraft:2.8.2@jar",
+            "name": "Magneticraft",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 6757144,
+              "MD5": "ecf018df8dd96edf5a562368316e390f",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Magneticraft_1.12-2.8.2-dev.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:mantle:1.3.3.55@jar",
+            "name": "Mantle",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 843486,
+              "MD5": "1026f5f8d3c4997831decd9023ca65a6",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Mantle-1.12-1.3.3.55.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:mekanism:1.12.2-9.8.3.390@jar",
+            "name": "Mekanism",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 7863657,
+              "MD5": "e622b8365b9a1190b3b6cc042854e870",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Mekanism-1.12.2-9.8.3.390.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:mrtjpcore:2.1.4.43@jar",
+            "name": "MrTJPCore",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 803400,
+              "MD5": "edff42a77c41f9191722b5b794e37668",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/MrTJPCore-1.12.2-2.1.4.43-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:netherportalfix:5.3.17@jar",
+            "name": "NetherPortalFix",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 109445,
+              "MD5": "97ff3e60aa9725cedbc64f19e179f813",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/NetherPortalFix_1.12.1-5.3.17.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:nmsot:1.2.2-mc1.12.2@jar",
+            "name": "No Mob Spawning on Trees",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 40598,
+              "MD5": "97414eccfd9a966f01d882dcfdcbfa65",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/NoMobSpawningOnTrees-1.2.2-mc1.12.2.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:openblocks:1.8.1@jar",
+            "name": "OpenBlocks",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 3217616,
+              "MD5": "cd7f642f983669c6ae94d6a999d0d6e9",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/OpenBlocks-1.12.2-1.8.1.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:opencomputers:1.7.5.192@jar",
+            "name": "OpenComputers",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 15643758,
+              "MD5": "1da9dd8478ba6d682f2787746776e18a",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/OpenComputers-MC1.12.2-1.7.5.192.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:openmods:0.12.2@jar",
+            "name": "OpenModsLib",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 2639587,
+              "MD5": "9c0606c553fbdf86e2f459c1cc40414d",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/OpenModsLib-1.12.2-0.12.2.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:examplemod:1.0.4@jar",
+            "name": "Example Mod",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 169483,
+              "MD5": "7cdde85216395abe430a7ff185650370",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/PTRLib-1.0.4.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:harvestcraft:1.12a@jar",
+            "name": "Pam's HarvestCraft",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 4907780,
+              "MD5": "d49e4034973a38b9a92d1f9939decd70",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Pam%27s+HarvestCraft+1.12.2zf.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:patchouli:1.0-20@jar",
+            "name": "Patchouli",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 466243,
+              "MD5": "7ccc8471d31b2997768f813d8e3f7b96",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Patchouli-1.0-20.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:pickletweaks:2.1.3@jar",
+            "name": "Pickle Tweaks",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 252072,
+              "MD5": "f4c85bb95a792587f064fc6d16c26de2",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/PickleTweaks-1.12.2-2.1.3.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:placebo:1.12.2-1.6.0@jar",
+            "name": "Placebo",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 76902,
+              "MD5": "a9ecfa296b2b1203ed5a68ed6c01833a",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Placebo-1.12.2-1.6.0.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:portalgun:1.12.2-7.1.0@jar",
+            "name": "PortalGun",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 1717073,
+              "MD5": "2219e579132b53719ef21ea78934f4c3",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/PortalGun-1.12.2-7.1.0.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:potioncore:1.8_for_1.12.2@jar",
+            "name": "Potion Core",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 141940,
+              "MD5": "7e825bf11b614ef38fef869be119fe0d",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/PotionCore-1.8_for_1.12.2.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:primal_tech:0.3.5@jar",
+            "name": "Primal_tech",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 681345,
+              "MD5": "f4083b8b26ae5da9e8c0d2c0f2615945",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/PrimalTech-0.3.5.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:projectintelligence:1.12.2-1.0.9.28@jar",
+            "name": "Project Intelligence",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 473948,
+              "MD5": "96657f132afd609f2a92cf4994698e64",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/ProjectIntelligence-1.12.2-1.0.9.28-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:projectred-core:4.9.4.120@jar",
+            "name": "ProjectRed Core",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 2036136,
+              "MD5": "1380ad8d4ffbc3f1189078473f6f10f9",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/ProjectRed-1.12.2-4.9.4.120-Base.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:projectred-transmission:4.9.4.120@jar",
+            "name": "ProjectRed Transmission",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 3923751,
+              "MD5": "0d8259b233ab89d2171b6337167e7e6f",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/ProjectRed-1.12.2-4.9.4.120-integration.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:projectred-expansion:4.9.4.120@jar",
+            "name": "ProjectRed Expansion",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 2596509,
+              "MD5": "cafa40d180f86081e748d15ba5a0ffc9",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/ProjectRed-1.12.2-4.9.4.120-mechanical.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:quantumstorage:4.7.0@jar",
+            "name": "QuantumStorage",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 247627,
+              "MD5": "4da452dfc28431b56e76e9ab2431df2c",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/QuantumStorage-1.12-4.7.0.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:quark:r1.6-178@jar",
+            "name": "Quark",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 3901586,
+              "MD5": "8d69c5722fa6498813da16b4d940246d",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Quark-r1.6-178.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:reborncore:3.18.1.514@jar",
+            "name": "Reborn Core",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 2463098,
+              "MD5": "ab51373e17e1439f0838358120b35cc8",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/RebornCore-1.12.2-3.18.1.514-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:rebornstorage:3.3.4.1@jar",
+            "name": "RebornStorage",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 80178,
+              "MD5": "550dd015b595b39ef691d6153f324aec",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/RebornStorage-1.12.2-3.3.4.1.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:reccomplex:1.4.8.2@jar",
+            "name": "Recurrent Complex",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 7076645,
+              "MD5": "821b38ba97b03eb79d64db797db67dac",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/RecurrentComplex-1.4.8.2.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:redstoneflux:2.1.0.6@jar",
+            "name": "Redstone Flux",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 36278,
+              "MD5": "f00530b437c41a189dbf8a85d0ac40b6",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/RedstoneFlux-1.12-2.1.0.6-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:repurpose:1.0.0.20@jar",
+            "name": "Repurpose",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 345020,
+              "MD5": "e94c469ea9fa16bd84ad20fda13007d9",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Repurpose-1.0.0.20.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:resourceloader:1.5.3@jar",
+            "name": "Resource Loader",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 16612,
+              "MD5": "51141e882f96ce756b9b3d25f2acdf57",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/ResourceLoader-MC1.12.1-1.5.3.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:signals:1.4.1-30@jar",
+            "name": "Signals",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 1851961,
+              "MD5": "93c9d0a5647ee1f20598d499a7ae94b8",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Signals-1.12.2-1.4.1-30-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:soundfilters:0.12_for_1.12@jar",
+            "name": "Sound Filters",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 43161,
+              "MD5": "afbdb448f432b5f7fff4967a1163d858",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/SoundFilters-0.12_for_1.12.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:spiceoflife:1.3.12@jar",
+            "name": "The Spice of Life",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 207687,
+              "MD5": "5a4c30010b31c5af956f2d597fa5a29f",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/SpiceOfLife-mc1.12-1.3.12.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:stackie:1.6.0.48@jar",
+            "name": "Stackie",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 51841,
+              "MD5": "84f72fc24d96a80babe66930f31c0354",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Stackie-1.12.2-1.6.0.48-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:bq_standard:3.4.173@jar",
+            "name": "Standard Expansion",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 460454,
+              "MD5": "a05ed445a2c384e429c124b673cbda2a",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/StandardExpansion-3.4.173.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:storagedrawers:1.12.2-5.4.1@jar",
+            "name": "Storage Drawers",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 605381,
+              "MD5": "050dd7ca699431dc4ce0b581567aae8a",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/StorageDrawers-1.12.2-5.4.1.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:surge:2.0.77@jar",
+            "name": "Surge",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 1042621,
+              "MD5": "53271408804cdf9bb22c1f885bcd8708",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Surge-1.12.2-2.0.77.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:tconstruct:1.12.2-2.13.0.179@jar",
+            "name": "Tinkers' Construct",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 4023076,
+              "MD5": "a85ed1a8fa47c7049eb3987ad6411532",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/TConstruct-1.12.2-2.13.0.179.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:techreborn:2.26.3.1066@jar",
+            "name": "Tech Reborn",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 2744721,
+              "MD5": "d3f6857e1d3c086b7196f9b38a0e157f",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/TechReborn-1.12.2-2.26.3.1066-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:tesla:1.0.63@jar",
+            "name": "TESLA",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 30925,
+              "MD5": "fa040aadae95494411406859f98959c6",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Tesla-1.12.2-1.0.63.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:thermalcultivation:0.3.3.12@jar",
+            "name": "Thermal Cultivation",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 106843,
+              "MD5": "a6993f3947a833582909c7e31325987c",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/ThermalCultivation-1.12.2-0.3.3.12-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:thermaldynamics:2.5.5.21@jar",
+            "name": "Thermal Dynamics",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 762980,
+              "MD5": "3317c6f327d7ebe0ee3bd6206ececb02",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/ThermalDynamics-1.12.2-2.5.5.21-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:thermalfoundation:2.6.3.27@jar",
+            "name": "Thermal Foundation",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 2312713,
+              "MD5": "0f61017dc9412ba4aad8a64f7bca16bb",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/ThermalFoundation-1.12.2-2.6.3.27-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:thermalinnovation:0.3.3.12@jar",
+            "name": "Thermal Innovation",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 197601,
+              "MD5": "0a670c0665e1b2d41300f7ed6da148b4",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/ThermalInnovation-1.12.2-0.3.3.12-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:tinkertoolleveling:1.12.2-1.1.0@jar",
+            "name": "Tinkers Tool Leveling",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 95850,
+              "MD5": "f9253fe86c6649afbf49d221c71ba19a",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/TinkerToolLeveling-1.12.2-1.1.0.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:tcomplement:1.12.2-0.4.3@jar",
+            "name": "Tinkers' Complement",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 998411,
+              "MD5": "905f6590b33d4b3ba80d973f3979d0d0",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/TinkersComplement-1.12.2-0.4.3.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:tinkersextras:1.12.2-1.1.0@jar",
+            "name": "TinkersExtras",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 12525,
+              "MD5": "ef0804bfef6e8f2c1d2c333f5f072bde",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/TinkersExtras-1.12.2-1.1.0.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:vanillafix:1.0.10-SNAPSHOT@jar",
+            "name": "VanillaFix",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 1117860,
+              "MD5": "eb05714c798a94f52ddd8617857052ab",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/VanillaFix-1.0.10-99.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:variedcommodities:1.0@jar",
+            "name": "Varied Commodities",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 1567926,
+              "MD5": "c4abbbf3e8705c5be1769f7617041803",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/VariedCommodities_1.12.2(21nov19).jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:vials:1.2.1.5@jar",
+            "name": "Vials",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 57282,
+              "MD5": "8627646d88cdb1f15780dff0d7e288e7",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Vials-MC1.12-1.2.1.5.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:vc:5.9.13@jar",
+            "name": "ViesCraft",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 17112536,
+              "MD5": "73c8c0017562e749e7a7bdf6c225a84e",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/ViesCraft-1.12.2-5.9.13.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:wrcbe:2.3.2.33@jar",
+            "name": "WirelessRedstone-CBE",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 364036,
+              "MD5": "2305b3f0d60cd55510c4dd08abdb3656",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/WR-CBE-1.12.2-2.3.2.33-universal.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:waterstrainer:1.12-3.2.0@jar",
+            "name": "Water Strainer",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 122873,
+              "MD5": "353d23bcd19d23fa13a12b41222475f0",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/WaterStrainer-1.12-3.2.0.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:waystones:4.1.0@jar",
+            "name": "Waystones",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 178994,
+              "MD5": "5159122949ffb79b80a341135673e8f8",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/Waystones_1.12.2-4.1.0.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:appliedenergistics2:rv6-stable-7@jar",
+            "name": "Applied Energistics 2",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 4062630,
+              "MD5": "b8667d60a761d5b5ae3c8a15192f9e28",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/appliedenergistics2-rv6-stable-7.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:architecturecraft:0.0.0@jar",
+            "name": "ArchitectureCraft",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 921733,
+              "MD5": "cc964d41fad4832a0850cf9da45d0414",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/architecturecraft-1.12-3.98.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:base:1.12.2-3.13.0@jar",
+            "name": "B.A.S.E",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 685028,
+              "MD5": "caae1ceb2cbcdc7bd7a6acf078788faf",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/base-1.12.2-3.13.0.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:buildcraftlib:7.99.24.5@jar",
+            "name": "BuildCraft Lib",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 4797886,
+              "MD5": "bd88c931dc86823b199ea3e792d0f94f",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/buildcraft-all-7.99.24.5.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:chickens:6.0.4@jar",
+            "name": "Chickens",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 247347,
+              "MD5": "230307e4a9924bdb5421bf1e635856aa",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/chickens-6.0.4.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:conarm:1.12.2-1.2.5.4@jar",
+            "name": "Construct's Armory",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 894192,
+              "MD5": "446e4ed35407246b3ebad1b24c230046",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/conarm-1.12.2-1.2.5.4.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:energyconverters:1.3.6.24@jar",
+            "name": "Energy Converters",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 158181,
+              "MD5": "3172ae2531664a1077b5bb00baecbdf2",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/energyconverters_1.12.2-1.3.6.24.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:environmentaltech:1.12.2-2.0.20.1@jar",
+            "name": "Environmental Tech",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 1001848,
+              "MD5": "ecd45a01612427f81b0520767b475dd9",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/environmentaltech-1.12.2-2.0.20.1.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:externaltweaker:0.3@jar",
+            "name": "External Tweaker",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 95259,
+              "MD5": "5ca78ce793b9f8daf1246fb842f24cb5",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/externaltweaker-1.12-0.3.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:extraalchemy-0.5.3:0.0.0@jar",
+            "name": "Extraalchemy-0.5.3.jar",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 248069,
+              "MD5": "05e9d2f6f678e80d9be002727e30bd2c",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/extraalchemy-0.5.3.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:foamfix:0.0.0@jar",
+            "name": "FoamFix",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 201683,
+              "MD5": "bba94f1ee252fcfbd2d52779f5c2f2b1",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/foamfix-0.10.10-1.12.2.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:ichunutil:1.12.2-7.2.2@jar",
+            "name": "IChunUtil",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 581963,
+              "MD5": "bf13a2044ece544b449c7dc6f8aa40af",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/iChunUtil-1.12.2-7.2.2.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:industrialforegoing:1.12.13@jar",
+            "name": "Industrial Foregoing",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 1603134,
+              "MD5": "a9330399f14295d90e4ec3b5bb93f81f",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/industrialforegoing-1.12.2-1.12.13-237.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:ironchest-1.12.2-7.0.72.847:0.0.0@jar",
+            "name": "Ironchest-1.12.2-7.0.72.847.jar",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 956692,
+              "MD5": "743179bc3a8f50751efbb019acc759a9",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/ironchest-1.12.2-7.0.72.847.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:jei:4.15.0.291@jar",
+            "name": "Just Enough Items",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 651473,
+              "MD5": "cfdbfecefb1bdc5a3fbbcecbfecb0545",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/jei_1.12.2-4.15.0.291.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:levelup2:1.2.4@jar",
+            "name": "Level Up! Reloaded",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 191239,
+              "MD5": "c067df3cc99a0dcf9c63e0183b58243d",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/levelup2-1.2.4.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:minerva:1.0.13@jar",
+            "name": "Minerva Library",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 133294,
+              "MD5": "8fbca7ae4c249da928225c6726dea877",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/minerva-library-1.0.13.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:moartinkers:0.6.0@jar",
+            "name": "Moar Tinkers",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 70754,
+              "MD5": "57256707133320f6dd7edd9230466982",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/moartinkers-0.6.0.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:modelloader:1.1.6@jar",
+            "name": "ModelLoader",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 371460,
+              "MD5": "ae1049918906f33cfa573808a67dd23a",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/modelloader-1.1.7.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:modtweaker:4.0.18@jar",
+            "name": "Mod Tweaker",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 488016,
+              "MD5": "d117e26e6b578b18d25848f578e86c3b",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/modtweaker-4.0.18.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:p455w0rdslib:1.12.2-2.3.161@jar",
+            "name": "P455w0rd's Library",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 328793,
+              "MD5": "0f90369081c895ad54f5a011044d1779",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/p455w0rdslib-1.12.2-2.3.161.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:questbook:3.1.1-1.12@jar",
+            "name": "Better Questing Quest Book",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 20203,
+              "MD5": "aa802b89cd4244d0bfaff4b60a0f5654",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/questbook-3.1.1-1.12.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:refinedstorage:1.6.15@jar",
+            "name": "Refined Storage",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 1911631,
+              "MD5": "de8d2220d174b5bc2c90e41cc9086d50",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/refinedstorage-1.6.15.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:sponge:1.12.2-7.1.10@jar",
+            "name": "Sponge",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 22090049,
+              "MD5": "4ae9e2f32c324ff6eb003cad8a019b72",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/spongeforge-1.12.2-2838-7.1.10.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:teslacorelib:1.12.2-1.0.17@jar",
+            "name": "Tesla Core Lib",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 1138988,
+              "MD5": "6c76ff8a9251852d00d9a648e72ad25c",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/tesla-core-lib-1.12.2-1.0.17.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:thebomplugin:1.12-0.2.3@jar",
+            "name": "The BOM Plugin",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 51629,
+              "MD5": "807b65a1f2f666dead4e690cf38b07ee",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/thebomplugin-1.12-0.2.3.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:tinkersjei:1.2@jar",
+            "name": "Tinker's JEI",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 12255,
+              "MD5": "b2b7946fdd352745f75a9676f0df51a3",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/tinkersjei-1.2.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:tweakersconstruct:1.12.2-1.5.2@jar",
+            "name": "Tweakers Construct",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 35972,
+              "MD5": "75d240777b9a8859198ee274ed498510",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/tweakersconstruct-1.12.2-1.5.2.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:upsizer:4.0.1@jar",
+            "name": "Up-Sizer",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 12164,
+              "MD5": "1ded879f176bd7ff58467616ce05b745",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/upsizer-mc1.12-4.0.1.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:valkyrielib:1.12.2-2.0.20.1@jar",
+            "name": "Valkyrie Lib",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 733580,
+              "MD5": "e9bfd5d4274395d87c0bea745a37223a",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/valkyrielib-1.12.2-2.0.20.1.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:vanillafoodpantry:4.3.1@jar",
+            "name": "Vanilla Food Pantry",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 1656445,
+              "MD5": "3856d24cafaaef87cd9b34a31c8780b7",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/vanillafoodpantry-mc1.12.2-4.3.1.jar"
+            }
+          },
+          {
+            "id": "generated.forgemod:zerocore:1.12.2-0.1.2.8@jar",
+            "name": "Zero CORE",
+            "type": "ForgeMod",
+            "required": {
+              "value": false,
+              "def": false
+            },
+            "artifact": {
+              "size": 228623,
+              "MD5": "cc782f73e62792dcdb108449baec110f",
+              "url": "https://mc-launcher.risegaming.de/servers/RiseCraft-Radioactive-1.12.2/forgemods/zerocore-1.12.2-0.1.2.8.jar"
+            }
+          }
+        ]
+      }
     ]
-}
+  }

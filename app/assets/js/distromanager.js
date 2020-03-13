@@ -522,7 +522,7 @@ exports.Types = {
     VersionManifest: 'VersionManifest'
 }
 
-let DEV_MODE = true
+let DEV_MODE = false
 
 const DISTRO_PATH = path.join(ConfigManager.getLauncherDirectory(), 'distribution.json')
 const DEV_PATH = path.join(ConfigManager.getLauncherDirectory(), 'dev_distribution.json')
@@ -537,7 +537,8 @@ exports.pullRemote = function(){
         return exports.pullLocal()
     }
     return new Promise((resolve, reject) => {
-        const distroURL = 'http://mc.westeroscraft.com/WesterosCraftLauncher/distribution.json'
+        const distroURL = 'http://mc-launcher.risegaming.de/distribution.json'
+        //const distroURL = 'http://mc.westeroscraft.com/WesterosCraftLauncher/distribution.json'
         //const distroURL = 'https://gist.githubusercontent.com/dscalzi/53b1ba7a11d26a5c353f9d5ae484b71b/raw/'
         const opts = {
             url: distroURL,
