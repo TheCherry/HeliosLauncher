@@ -38,6 +38,7 @@ webFrame.setLayoutZoomLevelLimits(0, 0)
 
 // Initialize auto updates in production environments.
 let updateCheckListener
+console.log("IsDEV: " + isDev);
 if(!isDev){
     ipcRenderer.on('autoUpdateNotification', (event, arg, info) => {
         switch(arg){
@@ -82,7 +83,7 @@ if(!isDev){
                         loggerAutoUpdater.log('No releases found.')
                     } else {
                         loggerAutoUpdater.error('Error during update check..', info)
-                        loggerAutoUpdater.debug('Error Code:', info.code)
+                        loggerAutoUpdater.error('Error Code:', info.code)
                     }
                 }
                 break
