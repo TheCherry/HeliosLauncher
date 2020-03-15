@@ -1,3 +1,4 @@
 owner: TheCherry
 repo: RiseCraftLauncher
 provider: github
+releaseType: release

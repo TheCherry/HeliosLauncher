@@ -1,6 +1,6 @@
 {
   "name": "risecraftlauncher",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "productName": "RiseCraft Launcher",
   "description": "Modded Minecraft Launcher",
   "author": "Daniel Scalzi (https://github.com/dscalzi/)",
@@ -48,6 +48,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheCherry/RiseCraftLauncher.git"
+    "url": "https://github.com/TheCherry/RiseCraftLauncher.git"
   }
 }
