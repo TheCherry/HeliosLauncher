@@ -56,14 +56,25 @@ class ProcessBuilder {
         if(Util.mcVersionAtLeast('1.13', this.server.getMinecraftVersion())){
             args = args.concat(this.constructModArguments(modObj.fMods))
         }
-
+        debugger
         logger.log('Launch Arguments:', args)
-        args[1] = args[1].replace(/jar.pack.xz/g, "jar");
+        args[1] = args[1].replace(/jar.pack.xz/g, "jar")
+        args.splice(14, 1);
+        args.splice(14, 1);
+        // args[14] = ""
+        // args[15] = ""
+        // args[17] = "1.14.4"
 
+        console.log(ConfigManager.getJavaExecutable() + " " + args.join(" "));
+
+        console.log(args)
         const child = child_process.spawn(ConfigManager.getJavaExecutable(), args, {
             cwd: this.gameDir,
             detached: ConfigManager.getLaunchDetached()
         })
+
+        console.log(child.spawnargs)
+        console.log(ConfigManager.getJavaExecutable() + " " + child.spawnargs.join(" "));
 
         if(ConfigManager.getLaunchDetached()){
             child.unref()
@@ -229,18 +240,22 @@ class ProcessBuilder {
         const modList = {
             repositoryRoot: ((type === 'forge' && this._requiresAbsolute()) ? 'absolute:' : '') + path.join(this.commonDir, 'modstore')
         }
-
+        const id_on_hold = []
         const ids = []
         if(type === 'forge'){
             for(let mod of mods){
-                ids.push(mod.getExtensionlessID())
+                if(mod.getExtensionlessID().includes("ender")){
+                    id_on_hold.push(mod.getExtensionlessID())
+                } else {
+                    ids.push(mod.getExtensionlessID())
+                }
             }
         } else {
             for(let mod of mods){
                 ids.push(mod.getExtensionlessID() + '@' + mod.getExtension())
             }
         }
-        modList.modRef = ids
+        modList.modRef = ids.concat(id_on_hold)
         
         if(save){
             const json = JSON.stringify(modList, null, 4)
@@ -315,10 +330,13 @@ class ProcessBuilder {
         args.push('-Djava.library.path=' + tempNativePath)
 
         // Main Java Class
-        args.push(this.forgeData.mainClass)
+        if (this.forgeData !== null){
+            args.push(this.forgeData.mainClass)
+            
+            // Forge Arguments
+            args = args.concat(this._resolveForgeArgs())
+        }
 
-        // Forge Arguments
-        args = args.concat(this._resolveForgeArgs())
 
         return args
     }
@@ -352,7 +370,9 @@ class ProcessBuilder {
         args = args.concat(ConfigManager.getJVMOptions())
 
         // Main Java Class
-        args.push(this.forgeData.mainClass)
+        if (this.forgeData !== null){
+            args.push(this.forgeData.mainClass)
+        }
 
         // Vanilla Arguments
         args = args.concat(this.versionData.arguments.game)
@@ -463,7 +483,9 @@ class ProcessBuilder {
         }
 
         // Forge Specific Arguments
-        args = args.concat(this.forgeData.arguments.game)
+        if (this.forgeData !== null && this.forgeData.arguments){
+            args = args.concat(this.forgeData.arguments.game)
+        }
 
         // Filter null values
         args = args.filter(arg => {

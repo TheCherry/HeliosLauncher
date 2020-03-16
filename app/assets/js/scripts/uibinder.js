@@ -67,7 +67,8 @@ function showMainUI(data){
     refreshServerStatus()
     setTimeout(() => {
         document.getElementById('frameBar').style.backgroundColor = 'rgba(0, 0, 0, 0.5)'
-        document.body.style.backgroundImage = `url('assets/images/backgrounds/${document.body.getAttribute('bkid')}.jpg')`
+        var img_number = Math.floor(Math.random() * Math.floor(8))
+        document.body.style.backgroundImage = `url('assets/images/backgrounds/${img_number}.png')`
         $('#main').show()
 
         const isLoggedIn = Object.keys(ConfigManager.getAuthAccounts()).length > 0
@@ -96,6 +97,14 @@ function showMainUI(data){
                 $('#loadSpinnerImage').removeClass('rotating')
             })
         }, 250)
+
+        setInterval(() => {
+            img_number += 1
+            if(img_number > 8){
+                img_number = 0
+            }
+            document.body.style.backgroundImage = `url('assets/images/backgrounds/${img_number}.png')`
+        }, 15000)
         
     }, 750)
     // Disable tabbing to the news container.

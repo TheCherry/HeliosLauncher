@@ -1470,6 +1470,8 @@ class AssetGuard extends EventEmitter {
                     }
                 }
             }
+            resolve(null)
+            return
             reject('No forge module found!')
         })
     }
