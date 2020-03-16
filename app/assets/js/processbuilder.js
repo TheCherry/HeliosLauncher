@@ -571,6 +571,24 @@ class ProcessBuilder {
     }
 
     /**
+     * Ensure that the classpath entries all point to jar files.
+     * 
+     * @param {Array.<String>} list Array of classpath entries.
+     */
+    _processClassPathList(list) {
+
+        const ext = '.jar'
+        const extLen = ext.length
+        for (let i = 0; i < list.length; i++) {
+            const extIndex = list[i].indexOf(ext)
+            if (extIndex > -1 && extIndex !== list[i].length - extLen) {
+                list[i] = list[i].substring(0, extIndex + extLen)
+            }
+        }
+
+    }
+
+    /**
      * Resolve the full classpath argument list for this process. This method will resolve all Mojang-declared
      * libraries as well as the libraries declared by the server. Since mods are permitted to declare libraries,
      * this method requires all enabled mods as an input
@@ -601,6 +619,8 @@ class ProcessBuilder {
         // Ex. 1.7.10 forge overrides mojang's guava with newer version.
         const finalLibs = {...mojangLibs, ...servLibs}
         cpArgs = cpArgs.concat(Object.values(finalLibs))
+
+        this._processClassPathList(cpArgs)
 
         return cpArgs
     }
