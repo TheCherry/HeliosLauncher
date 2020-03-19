@@ -59,8 +59,8 @@ class ProcessBuilder {
         debugger
         logger.log('Launch Arguments:', args)
         args[1] = args[1].replace(/jar.pack.xz/g, "jar")
-        args.splice(14, 1);
-        args.splice(14, 1);
+        //args.splice(14, 1);
+        //args.splice(14, 1);
         // args[14] = ""
         // args[15] = ""
         // args[17] = "1.14.4"
